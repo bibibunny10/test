@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="STYLE.CSS">
+</head>
+<body class="defaultTemplate">
+      <header>
+            <h3>Welcome #CSI101 demoTemplate</h3>
+            <nav><a href = "index.html">Home</a> <a href = "About.html">About</a> <a href = "contack.html">Contact</a></nav>
+</header>
+<div class="container">
+      <div class="preview"></div>
+      <div><strong>Primary Space</strong>
+          <menu>
+            <li><a href="#"onclick="DisplayFrom('1')">Workshop 1</a></li>
+            <li><a href="#"onclick="DisplayFrom('2')">Workshop 2</a></li>
+            <li><a href="#"onclick="DisplayFrom('3')">Workshop 3</a></li>
+            <li><a href="#"onclick="DisplayFrom('4')">Workshop 4</a></li> 
+            <li><a href="#"onclick="DisplayFrom('5')">Workshop 5</a></li>
+          </menu>
+      </div>
+      </div><strong>Secondary Space</strong>
+        <form id="1" style="display:block;">
+             <b> Woerkshop #1-1: Demoform</b>
+             <p><label>Firstname: <label><input type="text" id="fname" ></p>
+             <p><label>Lastname: <label><input type="text" id="lname"></p>
+             <p><label>Comment:</label><textarea id ="comment" ></textarea></p> 
+             <input type="reset"value="Reset">
+             <input type="submit"value="Submit" 
+             onclick="document.getElementById('result').innerHTML=
+                document.getElementById('fname').value+' '+document.getElementById('lname').value+ 'comment: '+
+                document.getElementById('comment').value; return false;">
+           <hr>
+           <label>Result:</label><label id="result">?</label>    
+        </form>
+        <form id="2" style="display:none;">
+             <b> Woerkshop #2-1: Demoform</b>
+            <p>.............</p>
+                <hr> 
+                <label>Result:</label><label id="result">?</label>
+        </form>
+        <form id="3" style="display:none;">
+             <b> Woerkshop #3-1: Demoform</b>
+            <p>.............</p>
+                <hr> 
+                <label>Result:</label><label id="result">?</label>
+        </form><form id="4" style="display:none;">
+             <b> Woerkshop #4-1: Demoform</b>
+            <p>.............</p>
+                <hr> 
+                <label>Result:</label><label id="result">?</label>
+        </form><form id="5" style="display:none;">
+             <b> Woerkshop #5-1: Demoform</b>
+            <p>.............</p>
+                <hr> 
+                <label>Result:</label><label id="result">?</label>
+        </form>
+      <div class="third"></div>
+      <div><strong>Third Space ... </strong></div> 
+      ...
+      </div>
+<footer>
+      <p>Created : 69046024-Mr , Donald Duck , copyright @CSI101-2026 </p>
+</footer>
+</body>
+<script src="script.js"></script>
+</html>
